@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Cifra de Vigènere (GF)</title>
+	<meta name="description" content="Vigènere.">
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="js/scripts.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="input">
+			<label for="texto_entrada">Entrada</label>
+			<textarea id="texto_entrada" rows="5"></textarea>
+		</div>
+		<div class="input">
+			<label for="texto_chave">Chave</label>
+			<textarea id="texto_chave" rows="1"></textarea>
+		</div>
+		<div id="opcoes">
+			<button id="btnDesencriptar" class="button btnDesencriptar" role="button"
+				onClick="vigenere('D')">DESENCRIPTAR</button>
+		</div>
+		<div id="saida" style="display: none">
+			<div id="resultado"></div>
+		</div>
+	</div>
+</body>
+</html>
